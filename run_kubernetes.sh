@@ -15,5 +15,5 @@ kubectl run mcrspredict --port=9000 --image=$dockerpath
 kubectl get pods
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward pods/mcrspredict 9000:8000
+kubectl port-forward deployment.apps/mcrspredict 9000:8000
 
